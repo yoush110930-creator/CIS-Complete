@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#388E3C",
+              "background-light": "#E3F2FD",
+              "background-dark": "#1A237E",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1A237E",
+              "on-surface-light": "#1A237E",
+              "on-surface-dark": "#FFFFFF",
+              "on-surface-secondary-light": "#388E3C",
+              "on-surface-secondary-dark": "#C8E6C9",
+              "on-primary": "#FFFFFF",
+              "primary-hover": "#2E7D32",
+              "secondary-container-light": "#C8E6C9",
+              "secondary-container-dark": "#1A237E",
+            },
+            fontFamily: {
+              display: ["Work Sans", "Noto Sans", "sans-serif"],
+            },
+            borderRadius: { DEFAULT: "0.5rem", lg: "0.75rem", xl: "1rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-surface-light dark:bg-background-dark font-display text-on-surface-light dark:text-on-surface-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex flex-col md:flex-row items-center justify-between whitespace-nowrap bg-background-light dark:bg-background-dark px-4 md:px-10 py-3 shadow-md">
+<div class="flex items-center gap-8 w-full md:w-auto">
+<div class="flex items-center gap-4 text-on-surface-light dark:text-on-surface-dark">
+<a href="index.html" class="flex items-center">
+  <img src="logo.png" alt="Cebu International School logo" class="h-10 w-auto rounded-md object-contain" loading="lazy"/>
+</a>
+<h2 class="text-lg font-bold tracking-tight hidden lg:block">Cebu International School</h2>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+<a class="hover:text-primary dark:hover:text-primary" href="#">Mahitungod Kanato</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Akademiko</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Pagpasulod</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Kinabuhi sa Campus</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Mga Kahinguhaan</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Kontaka Kami</a>
+</nav>
+<div class="flex items-center justify-end gap-2 mt-4 md:mt-0 w-full md:w-auto">
+<div class="relative w-full max-w-xs">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-secondary-light dark:text-on-surface-secondary-dark"> search </span>
+<input class="form-input w-full rounded-full border-none bg-secondary-container-light dark:bg-secondary-container-dark/50 pl-10 pr-4 py-2 text-sm text-on-surface-light dark:text-on-surface-dark placeholder:text-on-surface-secondary-light dark:placeholder:text-on-surface-secondary-dark focus:ring-2 focus:ring-primary" placeholder="Search" value=""/>
+</div>
+<button class="lg:hidden text-on-surface-light dark:text-on-surface-dark">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+<div class="hidden md:flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-primary text-on-primary text-sm font-bold hover:bg-primary-hover transition-colors">
+<span class="truncate">Pag-apply Karon</span>
+</button>
+<button class="relative group flex items-center justify-center rounded-full h-10 px-4 bg-secondary-container-light dark:bg-secondary-container-dark/50 text-on-surface-light dark:text-on-surface-dark text-sm font-bold hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined mr-2"> language </span>
+<span class="truncate">Cebuano</span>
+<div class="absolute top-full right-0 mt-2 w-32 bg-surface-light dark:bg-surface-dark rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="about.html">English</a>
+<a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="aboutkorean.html">Korean</a>
+</div>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="relative flex min-h-[60vh] flex-col items-center justify-center bg-cover bg-center bg-no-repeat p-4 text-center text-white" style='background-image: linear-gradient(rgba(26, 35, 126, 0.5), rgba(26, 35, 126, 0.8)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjLV1BnCVTk78jx5FLvgm69myQkZcocVRTn9w24MEW06nQIrRHFnlDhPltJzELoUsOcJgTkwWDO3I-WKxJBvLwqkG69vc4IoYpdKDa8FBAyVpkfVPUcFw4QEa44TawaBLORS-NoRFSbQwvG4b6JMppw7J-55JLDxs3Q3pQn_g6nGTD6sQCwA5lLLoF4M22roUz8dWP_Fc385TUVKuiWgy1HGIV8wJDQsa4pMV-nJi06Lj9LG1Q08Qp48Tm5DaOotFea_HA_dTt9q2z");'>
+<div class="max-w-4xl">
+<h1 class="text-4xl font-black leading-tight tracking-tight md:text-6xl">Pag-abli sa mga Hunahuna, Pag-umol sa mga Ugma</h1>
+<p class="mt-4 text-base md:text-xl font-light">Usa ka komunidad sa pagkat-on nga nag-ugmad sa kahusayan, pagkamamugnaon, ug pagkamabination.</p>
+<button class="mt-8 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-on-primary text-base font-bold tracking-wide hover:bg-primary-hover transition-colors">
+<span class="truncate">Pag-apply Karon</span>
+</button>
+</div>
+</div>
+<div class="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+<section class="mb-16">
+<h2 class="text-3xl font-bold text-center mb-8">Dali nga mga Link</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-secondary-container-light dark:bg-secondary-container-dark/50 text-on-surface-light dark:text-on-surface-dark text-base font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="truncate">Akademiko</span>
+</button>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-secondary-container-light dark:bg-secondary-container-dark/50 text-on-surface-light dark:text-on-surface-dark text-base font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="truncate">Mga Panghitabo</span>
+</button>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-secondary-container-light dark:bg-secondary-container-dark/50 text-on-surface-light dark:text-on-surface-dark text-base font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="truncate">Kalendaryo</span>
+</button>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-secondary-container-light dark:bg-secondary-container-dark/50 text-on-surface-light dark:text-on-surface-dark text-base font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="truncate">Balita</span>
+</button>
+</div>
+</section>
+<section class="mb-16">
+<h2 class="text-3xl font-bold text-center mb-8">Balita ug mga Panghitabo</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="group overflow-hidden rounded-lg bg-surface-light dark:bg-surface-dark/50 shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="h-56 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXEyiSUE0InvHeaBzcxBGi0YojFZSwiVeJScw1-08v8fJ0dON5YEZQXKAOWUshVsLQ_DUnOR5eebOUiz7bjGjvKTRJczxbQSCcUkIM7IF5xx1-cnPdJcmf-wymuKULoZ-0Yud6mErebbRwgx0lSMJNmQ4TPRcwO3kOLskSFFTtSoGyPmT1y9GzGkNZQB8j9ScFIVvvx8D4RQsWiUhwxt5EWTXN4g3oo39fnPPo7mmlpCS1Sw61hepqQDWvsWgc-7cz730YlwKqSMv3");'></div>
+<div class="p-6">
+<p class="text-sm font-semibold text-primary">Panghitabo</p>
+<h3 class="mt-2 text-xl font-bold">Pagbukas sa School Year</h3>
+<p class="mt-2 text-on-surface-secondary-light dark:text-on-surface-secondary-dark">Agosto 21, 2024</p>
+</div>
+</div>
+<div class="group overflow-hidden rounded-lg bg-surface-light dark:bg-surface-dark/50 shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="h-56 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAorASgfcGti4QZw5aF2h8T2ZJ8PyOTOeRF_-DlSITgr-7HDneGq59lbDl-r_y6kRxo1ss_LeEr710CGT4wKLQtHSe6CzYLsDLuxfq6a_IRDtmKO7ADrvdq_ZLm8tq9g10nh7DbSLifiCOFQSrznNR5SDetZJZcUQScXiZuLNkNbGdJCp5xoCrbRntj3dnCb1MGgeTVM-O81azxTK9ydikeai-CxT86-aAv1Ojm2umXbh8hLjCLp0ik4LOQiMuqBeKkojHAaFvF_QLS");'></div>
+<div class="p-6">
+<p class="text-sm font-semibold text-primary">Balita</p>
+<h3 class="mt-2 text-xl font-bold">Bag-ong mga Inisyatibo sa Campus</h3>
+<p class="mt-2 text-on-surface-secondary-light dark:text-on-surface-secondary-dark">Pagpadayon ug Pagkalainlain</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16">
+<h2 class="text-3xl font-bold text-center mb-8">Mga Departamento sa Akademiko</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary-container-light dark:bg-secondary-container-dark/50 p-4 text-center transition-transform duration-300 hover:scale-105">
+<span class="material-symbols-outlined text-4xl text-primary"> menu_book </span>
+<h3 class="text-base font-bold">Mga Humanidades</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary-container-light dark:bg-secondary-container-dark/50 p-4 text-center transition-transform duration-300 hover:scale-105">
+<span class="material-symbols-outlined text-4xl text-primary"> science </span>
+<h3 class="text-base font-bold">Siyensiya</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary-container-light dark:bg-secondary-container-dark/50 p-4 text-center transition-transform duration-300 hover:scale-105">
+<span class="material-symbols-outlined text-4xl text-primary"> palette </span>
+<h3 class="text-base font-bold">Mga Arte</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary-container-light dark:bg-secondary-container-dark/50 p-4 text-center transition-transform duration-300 hover:scale-105">
+<span class="material-symbols-outlined text-4xl text-primary"> music_note </span>
+<h3 class="text-base font-bold">Musika</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary-container-light dark:bg-secondary-container-dark/50 p-4 text-center transition-transform duration-300 hover:scale-105">
+<span class="material-symbols-outlined text-4xl text-primary"> sports_soccer </span>
+<h3 class="text-base font-bold">Atletiko</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary-container-light dark:bg-secondary-container-dark/50 p-4 text-center transition-transform duration-300 hover:scale-105">
+<span class="material-symbols-outlined text-4xl text-primary"> laptop_mac </span>
+<h3 class="text-base font-bold">Teknolohiya</h3>
+</div>
+</div>
+</section>
+<section class="mb-16">
+<h2 class="text-3xl font-bold text-center mb-8">Mga Testimonya</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="rounded-lg bg-surface-light dark:bg-surface-dark/50 p-6 shadow-lg">
+<div class="mx-auto mb-4 h-24 w-24 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmHVTMVOtia_gOIY4cvYu6vTycEBawwQ7D4gKYaZO5mrWuhz9srMy9IYoXwbdGTXRaTz0QlVQ_WcC3VMRSyXdesn5yvXXXzdqQT4Zmngyq7WUP1gqbJB4ILjBYI8fw4l9UMnZQJcca8MoyOM3cV78TwCuimMEc-wQS4ube2pAI4uvBDkmf3T58OhpFOm1yZUyRUXZYyvoJxWEGodFlbE45tDk3Xhoj_QA-6kkPOHRFOqOIGeRpGGy8fJJjwOOSIe1GNdbRmeRHWydW");'></div>
+<p class="text-center font-semibold">Si Maria, Alumni</p>
+<p class="mt-2 text-center text-sm text-on-surface-secondary-light dark:text-on-surface-secondary-dark">
+                    "Ang Cebu International School naghatag kanako og lig-on nga pundasyon alang sa akong karera."
+                  </p>
+</div>
+<div class="rounded-lg bg-surface-light dark:bg-surface-dark/50 p-6 shadow-lg">
+<div class="mx-auto mb-4 h-24 w-24 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB317ttN31Xq67oRA0jAQ3gibwNpmpPIUERITvjHXwtKXp3JlqmU_hYuMk4HirGAkq-L4xaJWsZ2lJ-CVK3mSatCpJkbJtKgyZPpznvtNu6km0CM2RrEvLFgRaRupCmX1IFOcDf_o3kGc4OmEqvEftCP5w6fMWh79-RTkuxyWaETmaGJj_2E-_gHqCcN5YUJErgHL6hHRm9cNEYo7UEK_aP_KcM3Zcs36_78mdpSvYACJJhrNXA4Z2phuy-E916kSBP-iXvr6l8XG0l");'></div>
+<p class="text-center font-semibold">Si G. Reyes, Magtutudlo</p>
+<p class="mt-2 text-center text-sm text-on-surface-secondary-light dark:text-on-surface-secondary-dark">
+                    "Nalipay ako nga mahimong bahin sa usa ka komunidad nga nagsuporta."
+                  </p>
+</div>
+<div class="rounded-lg bg-surface-light dark:bg-surface-dark/50 p-6 shadow-lg">
+<div class="mx-auto mb-4 h-24 w-24 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmw4Vk8Y5pQkl3l7Mp0y7XbfQcPDuqIUQwG8uSzT84-v9tPEVZGoZJD57mriqvZStJrr6tZcVAK_l_Q09fZjsZgRo-k5fj6nWK3II7bdHOBOk_-BZFo9jkRBSaD8aXlE3-TqP4sf8oc7czGdtS9HEGaS-ccwAAFYyFSjEa_8Lhw_OxT_3BHpIGt4n0e63hngXQz8vNKp1lFuKk7r1-WWarAh47QUihvPgXUMwjv-vkD0cvIS_iom9Uhb4I0fjyp4KSzxlYmQmjrsgS");'></div>
+<p class="text-center font-semibold">Mga Estudyante sa Klase</p>
+<p class="mt-2 text-center text-sm text-on-surface-secondary-light dark:text-on-surface-secondary-dark">
+                    "Ang among mga estudyante nagmalampuson sa akademiko ug sa gawas."
+                  </p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-3xl font-bold text-center mb-8">Galeriya sa Multimedia</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="overflow-hidden rounded-lg">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcdouIfW2RjwzRQ8IQz7m1TgwzFIfKIdn8EV_Sn0E2roVewy2qvYjbhazl1sA813f1n7-NPq_RYP9wsGSQ0A_uXPVB8AFc5EM54g-FRgXMGFXbOYJRLJ-DDAtTIWrdlzR18L2s2ZJTE8Va_r76GgViMieTQGk28NHdy9jkpc7fuGUejq-XTGHOUPPlNro6YSqNrUZ-wgeuiPaddIKXznElM5fNH9Asyxejk3Fw5YJCGY838fEH6UQsQfM70XaGrWsTm2yHwoHxl-qT");'></div>
+</div>
+<div class="overflow-hidden rounded-lg">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlWoRXHtT_vUblfIIzwsLljA1e10DpPynZsrYGTYfnFAnioDamaIaVIZ_Z8y5XQFThscUxXD88Kf3yuy5CDPNufhowc4tHlhgJk2a8Cuo_Ee4kf0W9KAY77yJgwGUTQMHDYBWomo67RXMbDp-Y5ZBoc7_VNB9r2EmNJY4-EQfmpFG9C_-t_4FNIZabUGDqnyN6SzUbImNVh7cBVRLUXUkkq-ADmor5I4l7Lx_-IvQIgqoXv2KyyGBSVJgvv_d9XTZGGWLYNm64eNj4");'></div>
+</div>
+<div class="overflow-hidden rounded-lg">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFfIu39bd4onBer6CJPFwsmrD_qea3wOIuYrd3cQvg-yWJTgARwKWCBSN1OgiSgGNVNub5p3nIhM6bdHPY51eVQExsJoW-bn9AYX5WhiXAvyeGNj_28DYd8fjw06KnXm6zF419t0PHyBah5wVPjwCHGcAID6qke4rHXKTEIc7ahqTHWk3acN5UkhqzZkIf8JLTPrEcZnLZhALFQJdg3sjeEQ0nhWidNgx3fMzTUDvEE-zTdOqY82k4u3-aQV5fHoSJI6Iqi-_ExXOp");'></div>
+</div>
+<div class="overflow-hidden rounded-lg">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXEyiSUE0InvHeaBzcxBGi0YojFZSwiVeJScw1-08v8fJ0dON5YEZQXKAOWUshVsLQ_DUnOR5eebOUiz7bjGjvKTRJczxbQSCcUkIM7IF5xx1-cnPdJcmf-wymuKULoZ-0Yud6mErebbRwgx0lSMJNmQ4TPRcwO3kOLskSFFTtSoGyPmT1y9GzGkNZQB8j9ScFIVvvx8D4RQsWiUhwxt5EWTXN4g3oo39fnPPo7mmlpCS1Sw61hepqQDWvsWgc-7cz730YlwKqSMv3");'></div>
+</div>
+<div class="overflow-hidden rounded-lg">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAorASgfcGti4QZw5aF2h8T2ZJ8PyOTOeRF_-DlSITgr-7HDneGq59lbDl-r_y6kRxo1ss_LeEr710CGT4wKLQtHSe6CzYLsDLuxfq6a_IRDtmKO7ADrvdq_ZLm8tq9g10nh7DbSLifiCOFQSrznNR5SDetZJZcUQScXiZuLNkNbGdJCp5xoCrbRntj3dnCb1MGgeTVM-O81azxTK9ydikeai-CxT86-aAv1Ojm2umXbh8hLjCLp0ik4LOQiMuqBeKkojHAaFvF_QLS");'></div>
+</div>
+<div class="overflow-hidden rounded-lg">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjLV1BnCVTk78jx5FLvgm69myQkZcocVRTn9w24MEW06nQIrRHFnlDhPltJzELoUsOcJgTkwWDO3I-WKxJBvLwqkG69vc4IoYpdKDa8FBAyVpkfVPUcFw4QEa44TawaBLORS-NoRFSbQwvG4b6JMppw7J-55JLDxs3Q3pQn_g6nGTD6sQCwA5lLLoF4M22roUz8dWP_Fc385TUVKuiWgy1HGIV8wJDQsa4pMV-nJi06Lj9LG1Q08Qp48Tm5DaOotFea_HA_dTt9q2z");'></div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark text-on-surface-light dark:text-on-surface-dark">
+<div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center text-center">
+<img alt="Cebu International School Logo" class="h-16 w-auto mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi3STBtb7HZsrO8fy57w7MwMvEYPQDCmuAwttfR3-JYvHEWUZLTQ8gGqaFgTxLR3V2P-w4VDsZ47tvYwVjMesG0YRi8Q_Rd3FiyKSok0B03jDnHJJc_vkcken6eSfsmNefm-Y3J2klRJdAuWv3umlX6FwD0pSqGKkVSc9fNJUa7k010qxueX5NwnWOoh1XelotswrwrTLcY4OGXZIc_bsKR_RxawtTdnlrmAYRAwMuEdgQ2kyPJE2CqbTSxqvsy_6mLKp3Fk_65GJw"/>
+<div class="my-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+<a class="hover:text-primary dark:hover:text-primary" href="#">Kontaka Kami</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Mapa sa Site</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Mga Termino sa Serbisyo</a>
+</div>
+<div class="flex justify-center gap-4">
+<a class="text-on-surface-secondary-light dark:text-on-surface-secondary-dark hover:text-primary dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+</svg>
+</a>
+<a class="text-on-surface-secondary-light dark:text-on-surface-secondary-dark hover:text-primary dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</a>
+<a class="text-on-surface-secondary-light dark:text-on-surface-secondary-dark hover:text-primary dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</a>
+</div>
+<p class="mt-6 text-sm text-on-surface-secondary-light dark:text-on-surface-secondary-dark">
+                © 2024 Cebu International School. Tanang Katungod Gigahin.
+              </p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#19a1e6",
+            "background-light": "#f6f7f8",
+            "background-dark": "#111c21",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<title>Cebu International School E-Learning Portal</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-white dark:bg-background-dark/50 p-6 flex-col hidden lg:flex">
+<div class="mb-8">
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">
+  <a href="index.html" class="hover:underline">Cebu International School</a>
+</h1>
+<p class="text-sm text-gray-500 dark:text-gray-400">E-Learning Portal</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg bg-primary/10 text-primary font-bold" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+          Dashboard
+        </a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">import_contacts</span>
+          Courses
+        </a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">assignment</span>
+          Assignments
+        </a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">grade</span>
+          Grades
+        </a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">campaign</span>
+          Announcements
+        </a>
+</nav>
+</aside>
+<main class="flex-1 p-6 lg:p-10">
+<div class="flex justify-between items-center mb-8">
+<h2 class="text-4xl font-bold text-gray-900 dark:text-white">Dashboard</h2>
+<button class="lg:hidden p-2 rounded-lg hover:bg-primary/10">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<section class="mb-10">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Quick Access</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl flex items-center gap-4 hover:shadow-lg hover:border-primary/50 border border-transparent transition-all">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">import_contacts</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-gray-900 dark:text-white">My Courses</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">View your subjects</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl flex items-center gap-4 hover:shadow-lg hover:border-primary/50 border border-transparent transition-all">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">assignment</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-gray-900 dark:text-white">Assignments Due</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">Check deadlines</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl flex items-center gap-4 hover:shadow-lg hover:border-primary/50 border border-transparent transition-all">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">grade</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-gray-900 dark:text-white">Recent Grades</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">See your scores</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl flex items-center gap-4 hover:shadow-lg hover:border-primary/50 border border-transparent transition-all">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">campaign</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-gray-900 dark:text-white">Announcements</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">Latest school news</p>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<section class="lg:col-span-2">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Upcoming Assignments</h3>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary">assignment</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-gray-800 dark:text-gray-200">Spirit Day</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Due: Nov 21, 2025</p>
+</div>
+<button class="ml-auto text-sm text-primary font-semibold hover:underline">View</button>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary">assignment</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-gray-800 dark:text-gray-200">Semester 1 HAD</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Due: Dec 25, 2025</p>
+</div>
+<button class="ml-auto text-sm text-primary font-semibold hover:underline">View</button>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary">assignment</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-gray-800 dark:text-gray-200">Science Affair</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Due: Feb 25, 2026</p>
+</div>
+<button class="ml-auto text-sm text-primary font-semibold hover:underline">View</button>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Recent Grades</h3>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary">grade</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-gray-800 dark:text-gray-200">Math Quiz 2</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Grade: A</p>
+</div>
+<p class="font-bold text-lg text-green-500">95%</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary">grade</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-gray-800 dark:text-gray-200">Science Midterm Exam</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Grade: B+</p>
+</div>
+<p class="font-bold text-lg text-yellow-500">88%</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary">grade</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-gray-800 dark:text-gray-200">English Essay</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Grade: A-</p>
+</div>
+<p class="font-bold text-lg text-green-500">92%</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>

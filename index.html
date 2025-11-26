@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="logo.png">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Cebu International School</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1A237E",
+            "background-light": "#FFFFFF",
+            "background-dark": "#121212",
+            "card-light": "#E3F2FD",
+            "card-dark": "#1E293B",
+            "accent-green": "#388E3C",
+            "accent-light-green": "#C8E6C9",
+            "text-light": "#1A237E",
+            "text-dark": "#FFFFFF",
+            "text-muted-light": "#5A6772",
+            "text-muted-dark": "#9CA3AF",
+            "border-light": "#E5E7EB",
+            "border-dark": "#374151",
+          },
+          fontFamily: {
+            display: ["Work Sans", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "0.75rem",
+            xl: "1rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <header id="main-navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent text-white">
+      <div class="w-full px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="index.html" class="flex items-center gap-4 group">
+            <img src="logo.png" alt="Cebu International School logo"
+              class="h-16 w-auto rounded-md object-contain transition-transform group-hover:scale-105" loading="lazy" />
+            <span class="text-xl font-bold leading-tight transition-colors">Cebu<br />International<br />School</span>
+          </a>
+
+          <nav class="hidden lg:flex items-center gap-6 text-lg font-medium">
+            <a class="hover:text-accent-green transition-colors text-xl font-bold px-2 py-1" href="index.html">Home</a>
+
+            <!-- Explore -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-accent-green transition-colors text-xl font-bold px-2 py-1">
+                Explore
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-48 rounded-xl bg-white dark:bg-card-dark shadow-xl ring-1 ring-black/5 dark:ring-white/5 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all transform origin-top-left scale-95 group-hover:scale-100">
+                <div class="py-1">
+                  <a href="about.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">About</a>
+                  <a href="campus_life.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Campus
+                    Life</a>
+                  <a href="news.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">News</a>
+                  <a href="calendar.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Calendar</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Study -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-accent-green transition-colors text-xl font-bold px-2 py-1">
+                Study
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-48 rounded-xl bg-white dark:bg-card-dark shadow-xl ring-1 ring-black/5 dark:ring-white/5 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all transform origin-top-left scale-95 group-hover:scale-100">
+                <div class="py-1">
+                  <a href="academic.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Academics</a>
+                  <a href="library.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Library</a>
+                  <a href="studentservice.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Student
+                    Services</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Join -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-accent-green transition-colors text-xl font-bold px-2 py-1">
+                Join
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-40 rounded-xl bg-white dark:bg-card-dark shadow-xl ring-1 ring-black/5 dark:ring-white/5 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all transform origin-top-left scale-95 group-hover:scale-100">
+                <div class="py-1">
+                  <a href="admission.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Admissions</a>
+                  <a href="contact.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Discover -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-accent-green transition-colors text-xl font-bold px-2 py-1">
+                Discover
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-48 rounded-xl bg-white dark:bg-card-dark shadow-xl ring-1 ring-black/5 dark:ring-white/5 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all transform origin-top-left scale-95 group-hover:scale-100">
+                <div class="py-1">
+                  <a href="news.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">News</a>
+                  <a href="campus_life.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Campus
+                    Life</a>
+                  <a href="studentservice.html"
+                    class="block px-4 py-2 text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Student
+                    Services</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <div
+              class="hidden md:flex items-center rounded-full bg-white/10 px-3 py-1 backdrop-blur-sm border border-white/20 transition-colors hover:bg-white/20">
+              <span class="material-symbols-outlined mr-2 text-sm">search</span>
+              <div style="position:relative;width:100%;">
+                <input id="site-search"
+                  class="bg-transparent border-0 focus:ring-0 text-sm placeholder-white/70 text-white w-32 focus:w-48 transition-all"
+                  placeholder="Search" type="text" autocomplete="off" />
+                <div id="search-results"
+                  style="display:none;position:absolute;top:100%;left:0;width:320px;max-width:90vw;z-index:1000;background:#fff;color:#222;border-radius:0.5rem;box-shadow:0 4px 16px rgba(0,0,0,0.12);padding:0.5rem 0;overflow:auto;max-height:320px;">
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-1 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-1 py-1 text-xs">
+              <a href="index.html"
+                class="px-2 py-1 rounded-full bg-accent-green text-white text-xs font-bold shadow-sm">EN</a>
+              <a href="aboutkorean.html"
+                class="px-2 py-1 text-xs hover:bg-white/10 rounded-full transition-colors">KR</a>
+              <a href="aboutcebuano.html"
+                class="px-2 py-1 text-xs hover:bg-white/10 rounded-full transition-colors">CE</a>
+            </div>
+
+            <button class="lg:hidden p-2 rounded-md hover:bg-white/10 transition-colors">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <!-- Dragon Icon -->
+            <div class="hidden xl:block ml-2">
+              <img src="CIS Dragon.png" alt="CIS Dragon"
+                class="h-12 w-auto object-contain drop-shadow-md hover:scale-110 transition-transform duration-300" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      // Navbar Scroll Effect
+      const navbar = document.getElementById('main-navbar');
+      const searchInput = document.querySelector('#site-search');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          // Scrolled State (Opaque)
+          navbar.classList.remove('bg-transparent', 'text-white');
+          navbar.classList.add('bg-white/90', 'dark:bg-background-dark/90', 'backdrop-blur-md', 'shadow-md', 'text-text-light', 'dark:text-text-dark');
+
+          // Update search input style for visibility on light background
+          if (searchInput) {
+            searchInput.classList.remove('placeholder-white/70', 'text-white');
+            searchInput.classList.add('placeholder-gray-500', 'text-text-light', 'dark:text-text-dark');
+            searchInput.parentElement.parentElement.classList.remove('bg-white/10', 'border-white/20');
+            searchInput.parentElement.parentElement.classList.add('bg-gray-100', 'dark:bg-white/10', 'border-gray-200', 'dark:border-gray-700');
+          }
+        } else {
+          // Top State (Transparent)
+          navbar.classList.add('bg-transparent', 'text-white');
+          navbar.classList.remove('bg-white/90', 'dark:bg-background-dark/90', 'backdrop-blur-md', 'shadow-md', 'text-text-light', 'dark:text-text-dark');
+
+          // Revert search input style
+          if (searchInput) {
+            searchInput.classList.add('placeholder-white/70', 'text-white');
+            searchInput.classList.remove('placeholder-gray-500', 'text-text-light', 'dark:text-text-dark');
+            searchInput.parentElement.parentElement.classList.add('bg-white/10', 'border-white/20');
+            searchInput.parentElement.parentElement.classList.remove('bg-gray-100', 'dark:bg-white/10', 'border-gray-200', 'dark:border-gray-700');
+          }
+        }
+      });
+    </script>
+    <main class="flex-grow">
+      <!-- Divider between Nav and Carousel -->
+      <div class="w-full h-px bg-white/30"></div>
+
+      <section aria-label="Hero carousel" class="relative">
+        <div id="hero-carousel" class="relative h-screen w-full overflow-hidden">
+          <!-- Slide 1 -->
+          <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700"
+            data-slide-index="0"
+            style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('CIS.jpg');">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+              <h2 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">Welcome to Cebu International
+                School</h2>
+              <p class="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">Inspiring young minds to grow, learn, and
+                thrive in a global community.</p>
+              <button
+                class="mt-8 bg-accent-green hover:bg-accent-green/90 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105">Apply
+                Now</button>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 translate-x-full"
+            data-slide-index="1"
+            style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('CIS\ 100th\ Anniversary.png');">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+              <h2 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">Celebrating 100 Years of
+                Excellence</h2>
+              <p class="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">Join us as we honor a century of learning and
+                community spirit..</p>
+              <a href="Cebu International School 100th Year Anniversary _ Centennial Celebration.mp4"
+                class="mt-8 inline-block bg-white/90 text-primary font-bold py-3 px-6 rounded-lg">Watch the Video</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 translate-x-full"
+            data-slide-index="2"
+            style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('CIS slide show image 1.png');">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+              <h2 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">Life Around Campus</h2>
+              <p class="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">Discover the vibrant life and learning
+                experiences at our campus.</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 translate-x-full"
+            data-slide-index="3"
+            style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('CIS slide show image 2.png');">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+              <h2 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">Student Life & Activities</h2>
+              <p class="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">Explore how students engage, learn, and grow
+                in our community.</p>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 translate-x-full"
+            data-slide-index="4"
+            style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('CIS slide show image 3.png');">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+              <h2 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">School Events &amp; Celebrations
+              </h2>
+              <p class="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">From sports to cultural events, celebrate with
+                our students.</p>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 translate-x-full"
+            data-slide-index="5"
+            style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('Anthon\ Portrait.jpg');">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+              <h2 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">A Century of Learning</h2>
+              <p class="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">100 years of academic excellence and
+                meaningful impact on our community.</p>
+            </div>
+          </div>
+
+          <!-- Controls and Indicators removed for auto-play only -->
+        </div>
+
+        <script>
+          (function () {
+            const slides = Array.from(document.querySelectorAll('#hero-carousel [data-slide-index]'));
+            let index = 0;
+            let interval = null;
+
+            function show(i) {
+              index = (i + slides.length) % slides.length;
+              slides.forEach((s, idx) => {
+                s.style.transform = `translateX(${(idx - index) * 100}%)`;
+              });
+            }
+
+            function next() { show(index + 1); }
+
+            function startInterval() { interval = setInterval(next, 5000); }
+
+            // initialize
+            show(0);
+            startInterval();
+          })();
+        </script>
+      </section>
+
+      <!-- Black Divider -->
+      <div class="w-full h-1 bg-gradient-to-r from-transparent via-gray-800 to-transparent"></div>
+
+      <section class="py-16 bg-card-light dark:bg-card-dark">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <a class="block rounded-lg bg-accent-green p-6 text-center text-white shadow-lg transition hover:-translate-y-1"
+              href="library.html">
+              <h3 class="font-bold text-xl">Library</h3>
+            </a>
+            <a class="block rounded-lg bg-primary p-6 text-center text-white shadow-lg transition hover:-translate-y-1"
+              href="calendar.html">
+              <h3 class="font-bold text-xl">Calendar</h3>
+            </a>
+            <a class="block rounded-lg bg-accent-green p-6 text-center text-white shadow-lg transition hover:-translate-y-1"
+              href="e-learning.html">
+              <h3 class="font-bold text-xl">Dashboard</h3>
+            </a>
+            <a class="block rounded-lg bg-primary p-6 text-center text-white shadow-lg transition hover:-translate-y-1"
+              href="studentservice.html">
+              <h3 class="font-bold text-xl">Student Services</h3>
+            </a>
+          </div>
+          <script>
+            // Simple site search implementation
+            document.addEventListener('DOMContentLoaded', function () {
+              const searchInput = document.getElementById('site-search');
+              const resultsBox = document.getElementById('search-results');
+              if (!searchInput || !resultsBox) return;
+              // Helper: get all visible text nodes
+              function getTextNodes() {
+                const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+                  acceptNode: function (node) {
+                    if (!node.parentElement) return NodeFilter.FILTER_REJECT;
+                    const style = window.getComputedStyle(node.parentElement);
+                    if (style && style.display === 'none') return NodeFilter.FILTER_REJECT;
+                    if (!node.textContent.trim()) return NodeFilter.FILTER_REJECT;
+                    return NodeFilter.FILTER_ACCEPT;
+                  }
+                });
+                let nodes = [], n;
+                while (n = walker.nextNode()) nodes.push(n);
+                return nodes;
+              }
+              function highlight(text, term) {
+                return text.replace(new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<mark>$1</mark>');
+              }
+              function showResults(results, term) {
+                if (!results.length) {
+                  resultsBox.innerHTML = '<div style="padding:0.5rem 1rem;color:#888;">No results found.</div>';
+                  resultsBox.style.display = 'block';
+                  return;
+                }
+                resultsBox.innerHTML = results.map(r => `<div style="padding:0.5rem 1rem;cursor:pointer;" onclick="window.scrollTo({top:${r.y - 80},behavior:'smooth'});document.activeElement.blur();document.getElementById('search-results').style.display='none';">${highlight(r.context, term)}</div>`).join('');
+                resultsBox.style.display = 'block';
+              }
+              searchInput.addEventListener('input', function (e) {
+                const term = this.value.trim();
+                if (!term) { resultsBox.style.display = 'none'; return; }
+                const nodes = getTextNodes();
+                const results = [];
+                nodes.forEach(node => {
+                  const idx = node.textContent.toLowerCase().indexOf(term.toLowerCase());
+                  if (idx !== -1) {
+                    // Get context: up to 40 chars before/after
+                    let context = node.textContent;
+                    if (context.length > 120) {
+                      const start = Math.max(0, idx - 40);
+                      const end = Math.min(context.length, idx + term.length + 40);
+                      context = (start > 0 ? '...' : '') + context.slice(start, end) + (end < context.length ? '...' : '');
+                    }
+                    // Try to get a section or heading as a label
+                    let label = '';
+                    let el = node.parentElement;
+                    while (el && el !== document.body) {
+                      if (/h[1-4]/i.test(el.tagName)) { label = el.textContent.trim(); break; }
+                      el = el.parentElement;
+                    }
+                    results.push({ context: (label ? label + ': ' : '') + context, y: node.parentElement.getBoundingClientRect().top + window.scrollY });
+                  }
+                });
+                showResults(results, term);
+              });
+              // Hide results on blur (with delay for click)
+              searchInput.addEventListener('blur', () => setTimeout(() => { resultsBox.style.display = 'none'; }, 200));
+              searchInput.addEventListener('focus', function () {
+                if (this.value.trim()) resultsBox.style.display = 'block';
+              });
+            });
+          </script>
+        </div>
+      </section>
+
+      <!-- Black Divider -->
+      <div class="w-full h-1 bg-gradient-to-r from-transparent via-gray-800 to-transparent"></div>
+
+      <section class="py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-12">Latest News &amp; Events</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-background-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden group">
+              <img alt="Science Fair" class="w-full h-56 object-cover" src="IMG_1898_(1).jpg" />
+              <div class="p-6">
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">June 15, 2024</p>
+                <h3 class="mt-2 text-xl font-semibold group-hover:text-primary transition">Students Shine at Annual
+                  Science Fair</h3>
+                <p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Innovative projects and hands-on
+                  experiments were proudly presented by our students, highlighting creativity and scientific thinking.
+                </p>
+              </div>
+            </div>
+            <div class="bg-background-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden group">
+              <img alt="Research Conference" class="w-full h-56 object-cover" src="IMG_2752_(1).jpg" />
+              <div class="p-6">
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">June 10, 2024</p>
+                <h3 class="mt-2 text-xl font-semibold group-hover:text-primary transition">Students Share Insights at
+                  Regional Research Conference</h3>
+                <p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Our students presented research findings
+                  at the regional conference, demonstrating leadership and academic rigor.</p>
+              </div>
+            </div>
+            <div class="bg-background-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden group">
+              <img alt="Cultural Day" class="w-full h-56 object-cover" src="IMG_2237_(1).jpg" />
+              <div class="p-6">
+                <p class="text-sm text-text-muted-light dark:text-text-muted-dark">May 28, 2024</p>
+                <h3 class="mt-2 text-xl font-semibold group-hover:text-primary transition">Celebrating Cultural
+                  Diversity at CIS</h3>
+                <p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Students and staff celebrated the
+                  richness of global cultures with performances, displays, and interactive activities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blue Divider -->
+      <div class="w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+
+      <section class="py-20 bg-card-light dark:bg-card-dark">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-12">Academic Departments</h2>
+          <div class="flex gap-8 overflow-x-auto pb-4 snap-x snap-mandatory justify-center">
+            <!-- Humanities Card -->
+            <div
+              class="group min-w-[260px] max-w-xs flex-1 bg-white dark:bg-card-dark rounded-2xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl snap-center cursor-pointer">
+              <span
+                class="material-symbols-outlined text-5xl text-primary mb-4 transition-transform duration-300 group-hover:scale-110">auto_stories</span>
+              <h3 class="mt-2 text-xl font-bold mb-2">Humanities</h3>
+              <p class="text-text-muted-light dark:text-text-muted-dark">Exploring history, literature, and social
+                studies.</p>
+            </div>
+            <!-- Science Card -->
+            <div
+              class="group min-w-[260px] max-w-xs flex-1 bg-white dark:bg-card-dark rounded-2xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl snap-center cursor-pointer">
+              <span
+                class="material-symbols-outlined text-5xl text-primary mb-4 transition-transform duration-300 group-hover:scale-110">science</span>
+              <h3 class="mt-2 text-xl font-bold mb-2">Science</h3>
+              <p class="text-text-muted-light dark:text-text-muted-dark">Hands-on experiments and scientific inquiry.
+              </p>
+            </div>
+            <!-- Arts Card -->
+            <div
+              class="group min-w-[260px] max-w-xs flex-1 bg-white dark:bg-card-dark rounded-2xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl snap-center cursor-pointer">
+              <span
+                class="material-symbols-outlined text-5xl text-primary mb-4 transition-transform duration-300 group-hover:scale-110">palette</span>
+              <h3 class="mt-2 text-xl font-bold mb-2">Arts</h3>
+              <p class="text-text-muted-light dark:text-text-muted-dark">Creative expression through visual and
+                performing arts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blue Divider -->
+      <div class="w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+
+      <section class="py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-12">What Our Community Says</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-accent-light-green/50 dark:bg-card-dark p-8 rounded-xl shadow-lg">
+              <img alt="Maria Santos"
+                class="w-24 h-24 rounded-full mx-auto -mt-20 border-4 border-white dark:border-background-dark"
+                src="File_000.png" />
+              <blockquote class="mt-6 text-center text-text-muted-light dark:text-text-muted-dark">
+                <p>"The teachers at Cebu International School are incredibly supportive and passionate about their
+                  subjects. I've learned so much and grown as a person."</p>
+                <cite class="mt-4 block font-bold text-text-light dark:text-text-dark not-italic">- Maria Santos, Class
+                  of 2023</cite>
+              </blockquote>
+            </div>
+            <div class="bg-accent-light-green/50 dark:bg-card-dark p-8 rounded-xl shadow-lg">
+              <img alt="David Lee"
+                class="w-24 h-24 rounded-full mx-auto -mt-20 border-4 border-white dark:border-background-dark"
+                src="IMG_3658.jpg" />
+              <blockquote class="mt-6 text-center text-text-muted-light dark:text-text-muted-dark">
+                <p>"The campus environment is welcoming and inclusive. I've made lifelong friends from different
+                  backgrounds."</p>
+                <cite class="mt-4 block font-bold text-text-light dark:text-text-dark not-italic">- David Lee, Class of
+                  2022</cite>
+              </blockquote>
+            </div>
+            <div class="bg-accent-light-green/50 dark:bg-card-dark p-8 rounded-xl shadow-lg">
+              <img alt="Chloe Chen"
+                class="w-24 h-24 rounded-full mx-auto -mt-20 border-4 border-white dark:border-background-dark"
+                src="IMG_2641.jpg" />
+              <blockquote class="mt-6 text-center text-text-muted-light dark:text-text-muted-dark">
+                <p>"The school's focus on holistic development has helped me excel not only academically but also in
+                  extracurricular activities."</p>
+                <cite class="mt-4 block font-bold text-text-light dark:text-text-dark not-italic">- Chloe Chen, Class of
+                  2024</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blue Divider -->
+      <div class="w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+
+      <section class="py-20 bg-card-light dark:bg-card-dark">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-12">Campus Multimedia</h2>
+          <div class="relative mb-8">
+            <video class="w-full h-auto rounded-xl shadow-lg" controls muted playsinline>
+              <source src="Cebu International School 100th Year Anniversary _ Centennial Celebration.mp4"
+                type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <img class="aspect-square w-full object-cover rounded-lg shadow-md transition-transform hover:scale-105"
+              src="1.jpg" />
+            <img class="aspect-square w-full object-cover rounded-lg shadow-md transition-transform hover:scale-105"
+              src="2.jpg" />
+            <img class="aspect-square w-full object-cover rounded-lg shadow-md transition-transform hover:scale-105"
+              src="3.jpg" />
+            <img class="aspect-square w-full object-cover rounded-lg shadow-md transition-transform hover:scale-105"
+              src="4.jpg" />
+            <img class="aspect-square w-full object-cover rounded-lg shadow-md transition-transform hover:scale-105"
+              src="5 (1).jpg" />
+            <img class="aspect-square w-full object-cover rounded-lg shadow-md transition-transform hover:scale-105"
+              src="6.jpg" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-lg font-semibold">Cebu International School</h3>
+            <p class="mt-2 text-sm text-white/80">Gov. M. Cuenco Ave, Cebu City, 6000 Cebu, Philippines</p>
+            <p class="mt-2 text-sm text-white/80">Phone: (032) 233 8129</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Quick Links</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a class="text-white/80 hover:text-white" href="about.html">About Us</a></li>
+              <li><a class="text-white/80 hover:text-white" href="admission.html">Admissions</a></li>
+              <li><a class="text-white/80 hover:text-white" href="academic.html">Academics</a></li>
+              <li><a class="text-white/80 hover:text-white" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Connect With Us</h3>
+            <div class="flex mt-4 space-x-4">
+              <a class="text-white/80 hover:text-white" href="comingsoon.html"><span class="sr-only">Facebook</span><svg
+                  aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path clip-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    fill-rule="evenodd"></path>
+                </svg></a>
+              <a class="text-white/80 hover:text-white" href="comingsoon.html"><span class="sr-only">Twitter</span><svg
+                  aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                  </path>
+                </svg></a>
+              <a class="text-white/80 hover:text-white" href="comingsoon.html"><span
+                  class="sr-only">Instagram</span><svg aria-hidden="true" class="h-6 w-6" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path clip-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.002 3.705c-1.144.05-1.782.217-2.21.385-.447.174-.737.385-.98.63-.243.243-.456.533-.63.98-.168.428-.335 1.066-.385 2.21-.05 1.042-.06 1.35-.06 3.425s.01 2.383.06 3.425c.05 1.144.217 1.782.385 2.21.174.447.385.737.63.98.243.243.533.456.98.63.428.168 1.066.335 2.21.385 1.042.05 1.35.06 3.425.06s2.383-.01 3.425-.06c1.144-.05 1.782-.217 2.21-.385.447-.174.737-.385.98-.63.243-.243.456-.533.63-.98.168-.428.335-1.066.385-2.21.05-1.042.06-1.35.06-3.425s-.01-2.383-.06-3.425c-.05-1.144-.217-1.782-.385-2.21a3.22 3.22 0 00-.63-.98 3.22 3.22 0 00-.98-.63c-.428-.168-1.066-.335-2.21-.385-1.042-.05-1.35-.06-3.425-.06s-2.383.01-3.425.06zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 14a2 2 0 110-4 2 2 0 010 4zm6-7.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"
+                    fill-rule="evenodd"></path>
+                </svg></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Language</h3>
+            <div class="mt-4 flex space-x-2">
+              <a class="text-white/80 hover:text-white underline" href="about.html">English</a>
+              <a class="text-white/80 hover:text-white" href="aboutkorean.html">Korean</a>
+              <a class="text-white/80 hover:text-white" href="aboutcebuano.html">Cebuano</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-white/20 pt-8 text-center text-sm text-white/80">
+          <p>© 2024 Cebu International School. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Floating Action Panel -->
+  <div
+    class="fixed right-4 top-1/2 -translate-y-1/2 z-[75] flex flex-col gap-0 bg-blue-600/70 backdrop-blur-md p-4 rounded-2xl shadow-2xl border border-blue-400/30">
+
+    <!-- Section 1: Tour Guide -->
+    <a href="comingsoon.html"
+      class="flex flex-col items-center justify-center gap-2 p-3 hover:bg-blue-500/30 rounded-xl transition-all group w-24">
+      <img src="Tour Guide Icon 2.png" alt="Tour Guide"
+        class="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
+      <span class="text-xs font-bold text-center leading-tight text-white">Tour Guide</span>
+    </a>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-white/40 my-2"></div>
+
+    <!-- Section 2: Announcements -->
+    <a href="comingsoon.html"
+      class="flex flex-col items-center justify-center gap-2 p-3 hover:bg-blue-500/30 rounded-xl transition-all group w-24">
+      <img src="Announcement icon.png" alt="Announcements"
+        class="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
+      <span class="text-xs font-bold text-center leading-tight text-white">Announcements</span>
+    </a>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-white/40 my-2"></div>
+
+    <!-- Section 3: Apply -->
+    <a href="comingsoon.html"
+      class="flex flex-col items-center justify-center gap-2 p-3 hover:bg-blue-500/30 rounded-xl transition-all group w-24">
+      <img src="Apply icon.png" alt="Apply"
+        class="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
+      <span class="text-xs font-bold text-center leading-tight text-white">Apply</span>
+    </a>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-white/40 my-2"></div>
+
+    <!-- Section 4: Contact -->
+    <a href="comingsoon.html"
+      class="flex flex-col items-center justify-center gap-2 p-3 hover:bg-blue-500/30 rounded-xl transition-all group w-24">
+      <img src="contact icon.png" alt="Contact"
+        class="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
+      <span class="text-xs font-bold text-center leading-tight text-white">Contact</span>
+    </a>
+  </div>
+
+  <!-- Privacy Policy Notice -->
+  <div id="privacy-notice"
+    class="fixed bottom-6 left-6 z-[70] max-w-md bg-white dark:bg-card-dark rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 p-6 transition-all duration-300">
+    <h3 class="text-lg font-bold text-text-light dark:text-text-dark mb-3">Privacy & Policy</h3>
+    <p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-4">
+      In order to assist with the management of data and traffic from this site, CIS uses Google Analytics, a
+      third-party service that makes use of cookies to help analyze automatically generated and non-identifiable data.
+      All Data generated are not shared with any other party. For more information, see <a
+        href="https://policies.google.com/privacy" target="_blank" class="text-primary hover:underline">Google privacy
+        practices</a>.
+    </p>
+    <p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-4">
+      By proceeding to navigate this site, you confirm your understanding, and give your consent and agreement to the
+      privacy notice.
+    </p>
+    <div class="flex gap-3">
+      <button onclick="handlePrivacyChoice('accept')"
+        class="flex-1 bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-4 rounded-lg transition-all">
+        Accept
+      </button>
+      <button onclick="handlePrivacyChoice('deny')"
+        class="flex-1 bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 text-text-light dark:text-text-dark font-semibold py-2 px-4 rounded-lg transition-all">
+        Deny
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Check if user has already made a privacy choice
+    if (localStorage.getItem('privacyChoice')) {
+      document.getElementById('privacy-notice').style.display = 'none';
+    }
+
+    function handlePrivacyChoice(choice) {
+      // Store the user's choice
+      localStorage.setItem('privacyChoice', choice);
+
+      // Hide the privacy notice with animation
+      const notice = document.getElementById('privacy-notice');
+      notice.style.opacity = '0';
+      notice.style.transform = 'translateY(20px)';
+
+      setTimeout(() => {
+        notice.style.display = 'none';
+      }, 300);
+
+      // Log the choice (you can add analytics here if needed)
+      console.log('Privacy choice:', choice);
+    }
+
+    function showPrivacyNotice() {
+      // Show the privacy notice again
+      const notice = document.getElementById('privacy-notice');
+      notice.style.display = 'block';
+      notice.style.opacity = '1';
+      notice.style.transform = 'translateY(0)';
+    }
+  </script>
+
+  <!-- Permanent Privacy Policy Link -->
+  <button onclick="showPrivacyNotice()"
+    class="fixed bottom-2 left-2 z-[65] text-xs text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary underline transition-colors bg-white/80 dark:bg-gray-800/80 px-2 py-1 rounded backdrop-blur-sm">
+    Privacy Policy
+  </button>
+
+  <!-- Chatbot Widget -->
+  <div id="chatbot-widget" class="fixed bottom-6 right-6 z-[70] flex flex-col items-end font-display">
+    <!-- Chat Window -->
+    <div id="chat-window"
+      class="mb-4 w-[350px] h-[500px] bg-white dark:bg-card-dark rounded-2xl shadow-2xl border border-border-light dark:border-border-dark flex flex-col overflow-hidden transition-all duration-300 origin-bottom-right transform scale-0 opacity-0 invisible">
+      <!-- Header -->
+      <div class="bg-primary p-4 flex items-center justify-between text-white shadow-md z-10">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center overflow-hidden border border-white/20">
+            <img src="Pineapplechatbot.png" class="w-full h-full object-cover" alt="Bot Avatar">
+          </div>
+          <div>
+            <h3 class="font-bold text-sm leading-tight">Pineapple Assistant</h3>
+            <p class="text-[10px] text-white/80 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
+              Online & Research Ready
+            </p>
+          </div>
+        </div>
+        <button onclick="toggleChat()" class="hover:bg-white/20 p-1.5 rounded-full transition-colors">
+          <span class="material-symbols-outlined text-lg">close</span>
+        </button>
+      </div>
+
+      <!-- Messages Area -->
+      <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 dark:bg-[#0f172a] scroll-smooth">
+        <!-- Welcome Message -->
+        <div class="flex gap-3 animate-fade-in-up">
+          <div
+            class="w-8 h-8 rounded-full bg-white flex-shrink-0 flex items-center justify-center overflow-hidden border border-gray-200 shadow-sm">
+            <img src="Pineapplechatbot.png" class="w-full h-full object-cover" alt="Bot">
+          </div>
+          <div
+            class="bg-white dark:bg-card-dark p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 dark:border-gray-700 max-w-[85%]">
+            <p class="text-sm text-text-light dark:text-text-dark leading-relaxed">Hello! I'm your research assistant.
+              🍍<br><br>I can analyze complex questions, search our knowledge base, and summarize information for you.
+              What would you like to know?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Status Indicator (Hidden by default) -->
+      <div id="research-status"
+        class="hidden px-4 py-2 bg-blue-50 dark:bg-blue-900/20 border-t border-blue-100 dark:border-blue-800/50">
+        <div class="flex items-center gap-3">
+          <div class="relative w-4 h-4">
+            <div class="absolute inset-0 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+          <span id="research-text" class="text-xs font-medium text-blue-600 dark:text-blue-400">Initializing research
+            protocols...</span>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <div class="p-4 bg-white dark:bg-card-dark border-t border-border-light dark:border-border-dark">
+        <form onsubmit="handleChatSubmit(event)" class="relative">
+          <input type="text" id="chat-input" placeholder="Ask a question..."
+            class="w-full pl-4 pr-12 py-3 bg-gray-100 dark:bg-gray-800 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 text-text-light dark:text-text-dark placeholder-gray-500 transition-all border border-transparent focus:bg-white dark:focus:bg-gray-900">
+          <button type="submit" id="send-btn"
+            class="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95">
+            <span class="material-symbols-outlined text-sm">send</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button onclick="toggleChat()"
+      class="group relative w-16 h-16 rounded-full bg-white dark:bg-card-dark shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] transition-all duration-300 hover:scale-110 border-4 border-white dark:border-gray-700 overflow-hidden z-20">
+      <img src="Pineapplechatbot.png" alt="Chat"
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
+      <span
+        class="absolute top-1 right-1 w-3.5 h-3.5 bg-green-500 border-2 border-white dark:border-gray-800 rounded-full animate-pulse"></span>
+    </button>
+  </div>
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.3s ease-out forwards;
+    }
+  </style>
+
+  <script>
+    const chatWindow = document.getElementById('chat-window');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
+    const researchStatus = document.getElementById('research-status');
+    const researchText = document.getElementById('research-text');
+    const sendBtn = document.getElementById('send-btn');
+    let isChatOpen = false;
+
+    function toggleChat() {
+      const chatbotWidget = document.getElementById('chatbot-widget');
+      isChatOpen = !isChatOpen;
+      if (isChatOpen) {
+        chatWindow.classList.remove('scale-0', 'opacity-0', 'invisible');
+        chatWindow.classList.add('scale-100', 'opacity-100', 'visible');
+        // Increase z-index to appear above floating panel
+        chatbotWidget.classList.remove('z-[70]');
+        chatbotWidget.classList.add('z-[80]');
+        setTimeout(() => chatInput.focus(), 300);
+      } else {
+        chatWindow.classList.remove('scale-100', 'opacity-100', 'visible');
+        chatWindow.classList.add('scale-0', 'opacity-0', 'invisible');
+        // Restore original z-index
+        chatbotWidget.classList.remove('z-[80]');
+        chatbotWidget.classList.add('z-[70]');
+      }
+    }
+
+    async function handleChatSubmit(e) {
+      e.preventDefault();
+      const query = chatInput.value.trim();
+      if (!query) return;
+
+      // Add User Message
+      addMessage(query, 'user');
+      chatInput.value = '';
+      chatInput.disabled = true;
+      sendBtn.disabled = true;
+
+      // Start Research Simulation
+      await simulateResearch(query);
+
+      chatInput.disabled = false;
+      sendBtn.disabled = false;
+      chatInput.focus();
+    }
+
+    function addMessage(text, sender) {
+      const div = document.createElement('div');
+      div.className = `flex gap-3 animate-fade-in-up ${sender === 'user' ? 'flex-row-reverse' : ''}`;
+
+      const avatar = sender === 'bot'
+        ? `<div class="w-8 h-8 rounded-full bg-white flex-shrink-0 flex items-center justify-center overflow-hidden border border-gray-200 shadow-sm"><img src="Pineapplechatbot.png" class="w-full h-full object-cover"></div>`
+        : `<div class="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center text-white shadow-sm"><span class="material-symbols-outlined text-xs">person</span></div>`;
+
+      const bubble = `
+        <div class="${sender === 'user' ? 'bg-primary text-white' : 'bg-white dark:bg-card-dark text-text-light dark:text-text-dark border border-gray-100 dark:border-gray-700'} p-3.5 rounded-2xl ${sender === 'user' ? 'rounded-tr-none' : 'rounded-tl-none'} shadow-sm max-w-[85%]">
+          <p class="text-sm leading-relaxed">${text}</p>
+        </div>
+      `;
+
+      div.innerHTML = sender === 'user' ? bubble + avatar : avatar + bubble;
+      chatMessages.appendChild(div);
+      scrollToBottom();
+    }
+
+    async function simulateResearch(query) {
+      researchStatus.classList.remove('hidden');
+
+      // Step 1: Analyze
+      updateStatus('Analyzing query intent...');
+      await wait(1500);
+
+      // Step 2: Search
+      updateStatus(`Searching knowledge base for "${query.substring(0, 20)}${query.length > 20 ? '...' : ''}"...`);
+      await wait(2000);
+
+      // Step 3: Synthesize
+      updateStatus('Synthesizing gathered information...');
+      await wait(1500);
+
+      researchStatus.classList.add('hidden');
+
+      // Generate Response (Mock)
+      const response = generateMockResponse(query);
+      addMessage(response, 'bot');
+    }
+
+    function updateStatus(text) {
+      researchText.textContent = text;
+    }
+
+    function wait(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function scrollToBottom() {
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function generateMockResponse(query) {
+      const q = query.toLowerCase();
+      if (q.includes('apply') || q.includes('admission')) {
+        return "Based on my research of the Admissions page, applying to CIS involves a 3-step process: 1) Submit the online application form, 2) Schedule an assessment/interview, and 3) Submit required documents (transcripts, recommendations). You can start by clicking the 'Apply' button in the sidebar.";
+      } else if (q.includes('tuition') || q.includes('fee')) {
+        return "I've checked the latest financial documents. Tuition fees vary by grade level. For the most accurate and up-to-date schedule of fees, please contact our Finance Office directly or visit the Admissions section.";
+      } else if (q.includes('location') || q.includes('where')) {
+        return "CIS is located at Gov. M. Cuenco Ave, Cebu City. I've pulled up the location data, and it's situated conveniently for access from major residential areas in Cebu.";
+      } else {
+        return `I have analyzed your request regarding "${query}". While I don't have real-time access to external databases right now, I recommend checking the 'About Us' or 'Academics' sections for more detailed information. Is there anything specific you'd like me to look up in the student handbook?`;
+      }
+    }
+  </script>
+
+</body>
+
+</html>

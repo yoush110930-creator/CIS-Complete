@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cebu International School - Student Services</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19a1e6",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111c21",
+                        "content-light": "#111c21",
+                        "content-dark": "#f6f7f8",
+                        "subtle-light": "#64748b",
+                        "subtle-dark": "#94a3b8",
+                        "border-light": "#e2e8f0",
+                        "border-dark": "#334155"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-3">
+<a href="index.html" class="flex items-center">
+  <img src="logo.png" alt="Cebu International School logo" class="h-10 w-auto rounded-md object-contain" loading="lazy"/>
+</a>
+<h1 class="text-xl font-bold text-content-light dark:text-content-dark">Cebu Internatiol School</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+<a class="text-content-light dark:text-content-dark hover:text-primary transition-colors" href="academic.html">Academics</a>
+<a class="text-content-light dark:text-content-dark hover:text-primary transition-colors" href="admission.html">Admissions</a>
+<a class="text-primary font-semibold" href="#">Student Life</a>
+<a class="text-content-light dark:text-content-dark hover:text-primary transition-colors" href="about.html">About Us</a>
+<a class="text-content-light dark:text-content-dark hover:text-primary transition-colors" href="news.html">News &amp; Events</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-full hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-content-light dark:text-content-dark">search</span>
+</button>
+<button class="p-2 rounded-full hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-content-light dark:text-content-dark">language</span>
+</button>
+<button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtXAFk9gQ4rs9blqE-dcfGR-tS757QOlTNZ6kevDJj9F-EcZgEn7RtsQ_RHwqIub50SkLFX24PqNkyUxgMXql-YVI_etPmY0p-lJOW358cBxfxUVYm22qksuBRDZYNSfu6U5nFl_tw1Lz5hdD2ZMiA8vgS377JlgqJDQDj11BjoYvNsHBmnfITVj175MkWnGv7309af1SrdsbswEvc_q5zUTfCg20VdT0l5up6K1AUlWHlUNgPd_3P9uoZkfZT98kkAf55zJoDtmyM");'></div>
+</button>
+<button class="lg:hidden p-2 rounded-full hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-content-light dark:text-content-dark">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-content-light dark:text-content-dark">Student Services</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-subtle-light dark:text-subtle-dark">
+                            We are committed to providing comprehensive support to ensure the well-being and success of all our students. Our dedicated team offers a range of services to address academic, personal, and social needs.
+                        </p>
+</div>
+<div class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+<div class="md:col-span-1">
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark">Academic Advising</h3>
+</div>
+<div class="md:col-span-3 space-y-4">
+<p class="text-subtle-light dark:text-subtle-dark">Our academic advisors work closely with students to help them navigate their academic journey, from course selection to graduation requirements. We provide personalized guidance to ensure students are on track to achieve their educational goals.</p>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<div class="flex-shrink-0 size-12 flex items-center justify-center bg-primary/20 rounded-full text-primary">
+<span class="material-symbols-outlined">email</span>
+</div>
+<div>
+<p class="font-semibold text-content-light dark:text-content-dark">Contact: Dr. Maria Santos</p>
+<a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary transition-colors" href="mailto:advisor@cis.edu.ph">advisor@cis.edu.ph</a>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+<div class="md:col-span-1">
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark">Counseling Services</h3>
+</div>
+<div class="md:col-span-3 space-y-4">
+<p class="text-subtle-light dark:text-subtle-dark">Our counseling services offer confidential support for students facing personal or emotional challenges. Our counselors provide a safe and supportive environment for students to discuss their concerns and develop coping strategies.</p>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<div class="flex-shrink-0 size-12 flex items-center justify-center bg-primary/20 rounded-full text-primary">
+<span class="material-symbols-outlined">email</span>
+</div>
+<div>
+<p class="font-semibold text-content-light dark:text-content-dark">Contact: Mr. David Lee</p>
+<a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary transition-colors" href="mailto:counselor@cis.edu.ph">counselor@cis.edu.ph</a>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+<div class="md:col-span-1">
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark">Health Services</h3>
+</div>
+<div class="md:col-span-3 space-y-4">
+<p class="text-subtle-light dark:text-subtle-dark">Our health services team is dedicated to promoting the physical well-being of our students. We provide basic medical care, health education, and resources to support a healthy lifestyle.</p>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<div class="flex-shrink-0 size-12 flex items-center justify-center bg-primary/20 rounded-full text-primary">
+<span class="material-symbols-outlined">email</span>
+</div>
+<div>
+<p class="font-semibold text-content-light dark:text-content-dark">Contact: Ms. Anna Reyes</p>
+<a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary transition-colors" href="mailto:nurse@cis.edu.ph">nurse@cis.edu.ph</a>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+<div class="md:col-span-1">
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark">Career Guidance</h3>
+</div>
+<div class="md:col-span-3 space-y-4">
+<p class="text-subtle-light dark:text-subtle-dark">Our career guidance counselors assist students in exploring career options, developing job search skills, and preparing for future employment. We offer workshops, individual counseling, and resources to help students make informed decisions.</p>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<div class="flex-shrink-0 size-12 flex items-center justify-center bg-primary/20 rounded-full text-primary">
+<span class="material-symbols-outlined">email</span>
+</div>
+<div>
+<p class="font-semibold text-content-light dark:text-content-dark">Contact: Mr. James Tan</p>
+<a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary transition-colors" href="mailto:careers@cis.edu.ph">careers@cis.edu.ph</a>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+<div class="md:col-span-1">
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark">Student Life Support</h3>
+</div>
+<div class="md:col-span-3 space-y-4">
+<p class="text-subtle-light dark:text-subtle-dark">Our student life support team focuses on enhancing the overall student experience. We organize events, activities, and programs that promote engagement, leadership development, and a sense of community.</p>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<div class="flex-shrink-0 size-12 flex items-center justify-center bg-primary/20 rounded-full text-primary">
+<span class="material-symbols-outlined">email</span>
+</div>
+<div>
+<p class="font-semibold text-content-light dark:text-content-dark">Contact: Ms. Sarah Chen</p>
+<a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary transition-colors" href="mailto:studentlife@cis.edu.ph">studentlife@cis.edu.ph</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-dark text-background-light mt-auto">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="col-span-2 lg:col-span-1">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 bg-primary text-white rounded-lg">
+<svg class="w-6 h-6" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zm0 11.5L5.5 10.25l-3.5 1.75L12 17l10-5-3.5-1.75L12 13.5z"></path></svg>
+</div>
+<h1 class="text-xl font-bold">Cebu Int'l School</h1>
+</div>
+<p class="mt-4 text-sm text-subtle-dark">Excellence in Education since 1924.</p>
+</div>
+<div class="mt-4">
+<h4 class="font-semibold">Quick Links</h4>
+<ul class="space-y-2 mt-2 text-sm">
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">FAQs</a></li>
+</ul>
+</div>
+<div class="mt-4">
+<h4 class="font-semibold">Connect</h4>
+<ul class="space-y-2 mt-2 text-sm">
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">Facebook</a></li>
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">Twitter</a></li>
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="text-subtle-dark hover:text-primary transition-colors" href="#">LinkedIn</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1 mt-4">
+<h4 class="font-semibold">Newsletter</h4>
+<p class="mt-2 text-sm text-subtle-dark">Stay updated with our latest news.</p>
+<form class="mt-4 flex">
+<input class="w-full rounded-l-md border-0 bg-background-light/20 text-white placeholder-subtle-dark px-3 py-2 focus:ring-2 focus:ring-primary focus:outline-none" placeholder="Your email" type="email"/>
+<button class="bg-primary text-white font-semibold px-4 py-2 rounded-r-md hover:bg-primary/80 transition-colors">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-border-dark text-center text-sm text-subtle-dark">
+<p>© 2024 Cebu International School. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

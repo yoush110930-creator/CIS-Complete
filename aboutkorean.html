@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cebu International School</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1A237E",
+            "secondary": "#388E3C",
+            "background": {
+              "DEFAULT": "#FFFFFF",
+              "subtle": "#E3F2FD"
+            },
+            "card": {
+              "DEFAULT": "#FFFFFF",
+              "subtle": "#C8E6C9"
+            },
+            "text": {
+              "DEFAULT": "#1A237E",
+              "muted": "#388E3C"
+            }
+          },
+          fontFamily: {
+            "sans": ["Work Sans", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background dark:bg-background-dark font-sans text-text dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="bg-primary text-background dark:bg-primary dark:text-background-dark shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-4">
+<a href="index.html" class="flex items-center">
+  <img src="logo.png" alt="Cebu International School logo" class="h-10 w-auto rounded-md object-contain" loading="lazy"/>
+</a>
+<h1 class="text-xl font-bold">세부 국제학교</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="font-medium hover:text-secondary dark:hover:text-secondary" href="about.html">소개</a>
+<a class="font-medium hover:text-secondary dark:hover:text-secondary" href="campus_life.html">학생 생활</a>
+<a class="font-medium hover:text-secondary dark:hover:text-secondary" href="academic.html">학습</a>
+<a class="font-medium hover:text-secondary dark:hover:text-secondary" href="admission.html">입학</a>
+<a class="font-medium hover:text-secondary dark:hover:text-secondary" href="contact.html">공지사항</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text/50">search</span>
+<input class="rounded-full bg-background/20 dark:bg-background-dark/20 py-2 pl-10 pr-4 text-sm placeholder:text-background/80 dark:placeholder:text-background-dark/80 focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="검색" type="search"/>
+</div>
+<button class="hidden lg:inline-flex items-center justify-center rounded-lg bg-secondary px-5 py-2.5 text-sm font-bold text-background dark:text-background-dark transition-colors hover:bg-secondary/90">
+              지금 신청하기
+            </button>
+<div class="relative">
+<button class="flex items-center gap-1 rounded-lg bg-primary/20 dark:bg-primary/20 px-3 py-2.5 text-sm font-medium hover:bg-primary/30 dark:hover:bg-primary/30" id="lang-switcher">
+<span class="material-symbols-outlined text-base">language</span>
+<span>KO</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<button class="lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative h-[60vh] min-h-[400px] bg-cover bg-center text-background dark:text-background-dark flex items-center justify-center" style="background-image: linear-gradient(rgba(26, 35, 126, 0.5), rgba(26, 35, 126, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGMrmZRHaEFW_tTJAhLGMy0ftzk2iARN9N8-HVuNCp_YsnRB7iCxvgqlWsZclpnmBXvdkKfxRYEEruz7u3i8jOo3fucAroARSyO_YDWFEsXxFILdgWNn9aquItskZA-Wur25rDbnNAfAR0PvSvnni-yhXceP7Z9q6gXoQSEOvDaY69vkD1RlsAq5fBwizzWnYdHYmj0oxXeOH3XAzB45bPY7JRxtdfn4eyxaaMlo69XZ5yKHhrllWkdAcP4ycsHWh4DgE-mk6TMjw-');">
+<div class="text-center space-y-6 px-4">
+<h1 class="text-4xl md:text-6xl font-black tracking-tight">글로벌 마인드를 갖춘 인재 양성</h1>
+<p class="text-lg md:text-xl font-light max-w-3xl mx-auto">세부 국제학교는 학생들이 국제 사회의 리더로 성장할 수 있도록 최고의 교육 환경을 제공합니다.</p>
+<button class="rounded-lg bg-secondary px-8 py-3 text-base font-bold text-background dark:text-background-dark transition-transform hover:scale-105">
+            지금 신청하기
+          </button>
+</div>
+</section>
+<section class="py-16 lg:py-24 bg-background-subtle dark:bg-background-subtle-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+<div class="bg-card dark:bg-card-dark p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<span class="material-symbols-outlined text-5xl text-secondary">school</span>
+<h3 class="mt-4 text-lg font-bold text-primary">학업 프로그램</h3>
+</div>
+<div class="bg-card dark:bg-card-dark p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<span class="material-symbols-outlined text-5xl text-secondary">groups</span>
+<h3 class="mt-4 text-lg font-bold text-primary">학생 생활</h3>
+</div>
+<div class="bg-card dark:bg-card-dark p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<span class="material-symbols-outlined text-5xl text-secondary">event</span>
+<h3 class="mt-4 text-lg font-bold text-primary">이벤트 및 소식</h3>
+</div>
+<div class="bg-card dark:bg-card-dark p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<span class="material-symbols-outlined text-5xl text-secondary">campaign</span>
+<h3 class="mt-4 text-lg font-bold text-primary">CIS 소식</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 lg:py-24 bg-background dark:bg-background-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl lg:text-4xl font-bold text-primary">최신 뉴스 및 이벤트</h2>
+<p class="mt-2 text-lg text-text-muted">우리 학교 커뮤니티의 최신 소식을 확인하세요.</p>
+</div>
+<div class="bg-card-subtle dark:bg-card-subtle-dark rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row items-center">
+<div class="md:w-1/2">
+<img alt="School event" class="w-full h-64 md:h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfteQf_i3Bbt8tvc6-LWFDyQxjE_2o-xu8Z3Tm2Nwg54YX93E42_zLs3t6tt6hXhXWw7o8Frzp943xw6DrsRozkAXU91H-kN_R1tokprv8DT3pQjPbBra-MN37zdZi0af5MsWMfa8mrH-AWFVoItv0ru0fsOOfMe_ouau-UgoEdbOPhwo_L_s5mLjwOjo5G_cBMmDhhMcaOBkAgCrSxhw88JcFMunGW59LtkNIvoV96D8acJN3SbNLjxDRAqgWRDgebcj1ix2FlyVk"/>
+</div>
+<div class="p-8 md:w-1/2">
+<p class="text-sm text-text-muted">2024년 7월 26일</p>
+<h3 class="mt-2 text-2xl font-bold text-primary">연례 국제의 날 축제</h3>
+<p class="mt-4 text-text">전 세계의 다양한 문화를 기념하는 다채로운 행사에 참여하세요. 음식, 음악, 공연 등이 준비되어 있습니다.</p>
+<a class="inline-block mt-6 font-bold text-secondary hover:underline" href="#">더 알아보기 →</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 lg:py-24 bg-background-subtle dark:bg-background-subtle-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl lg:text-4xl font-bold text-primary">학과</h2>
+<p class="mt-2 text-lg text-text-muted">우리의 포괄적인 학업 프로그램을 살펴보세요.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img alt="Kindergarten" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIyuYuio_eufF0NtDPfzipLNXDUYoY5Jrzpq_gGr1p1QoPLrXC9ZUnL3notdR34YWFRqtbHeFWKrbvxzeLKAaG2wOLIi-zANHpb0h7euADw0slMyXip5itLjt5N8GJf-tKp-P6sivMFhfDr21uiFCaRfbLzHd9lYqWWUoQbnhchhl3GMuYyCa87ywqg-FqM9WC6oSFAIamA_eOb6-QedwwxUGIxP-YVpguzAAhJ_7oby20UBqeDUnSPiv4lU9fa3MHnHODJL9hJmn9"/>
+</div>
+<div class="mt-4">
+<h3 class="text-xl font-bold text-primary">유치원</h3>
+<p class="text-text-muted mt-1">탐구 기반 학습</p>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img alt="Elementary School" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwUVrGMza5d2Rtk74wXg0tTf0sa93CvlxysWVCYO3XA5HAOCZvYXAUFurbNm-pCmYNs3rRpk1yxot3td9RuNgUJDh5j4ufd0ersnUCK8iAe0Rnxh_KqoT8K-hEpi-RA3VirWNvcQhZOcxAwhcw-vkhIIxFC7n0cb82WL5J_FQglv-Xk6OG6JicObI7sRTnr--P3APUWxLbBNHnPA8aSgMIEdoOxFBdHPAyvuQs9020PXVM79PNOC5mV-NimB-rMpsPrhjN5yvogPHK"/>
+</div>
+<div class="mt-4">
+<h3 class="text-xl font-bold text-primary">초등학교</h3>
+<p class="text-text-muted mt-1">견고한 기초 다지기</p>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img alt="Middle School" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7PCBeZiCA6ayKcCvpxRs3axfpcoirR85KsVjildXUAlRv2cNyJwAYpUr84D8JEY7xqnjLW1dY-mbqPx1nW4KhL7q_Dr9zyP1vRBE3tgAX-qcAz2dr1LsFB_P1ngFSPS1f8c2nSfUG17RCwDSuHAoybxeQntS0h7lfyaxYgBCND5N-65vdJnjovQaZthWCJ02fZvJED2q9-BEv5PZBO33-9M6TxN-O32t5m02jqnEG0SqBDAFuNsDkLLq9lzsGmFdZ61h768qYMy1l"/>
+</div>
+<div class="mt-4">
+<h3 class="text-xl font-bold text-primary">중학교</h3>
+<p class="text-text-muted mt-1">비판적 사고 개발</p>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img alt="High School" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw556Oz3IdkEfURzOv_igrhx-6-GihYIAVV6q_m_AZ18gGpVHwxwOaXiBjceG0u88orzePPyt8xmeqjG6T3uoHCQopNNK7K6J-QSoaKtaZsOyWa3S6eji5yZQO9N9Ri3KmvZRyBZXNWJ6zAj0Igynybdxqwwju78aEl3bp4K_-sRhYGSzkOtKsvxiAqYQF9RnKbCApF7SSIGlhPwo8emjcpWp_kBSDtO2WKex2_z0e4MkQsH_8aLQC0neb10EDU6yfx3zpAz9jGhP7"/>
+</div>
+<div class="mt-4">
+<h3 class="text-xl font-bold text-primary">고등학교</h3>
+<p class="text-text-muted mt-1">미래를 위한 준비</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 lg:py-24 bg-background dark:bg-background-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl lg:text-4xl font-bold text-primary">커뮤니티의 목소리</h2>
+<p class="mt-2 text-lg text-text-muted">우리 학생, 동문, 학부모님들의 이야기를 들어보세요.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-card dark:bg-card-dark p-6 rounded-lg shadow-md text-center">
+<img alt="Student" class="w-24 h-24 rounded-full mx-auto -mt-16 border-4 border-background dark:border-background-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdWYW4i8cDCuFimVIEiqv681QfEmMooKM0ECzA99cw9ftzCx14B5Vt2L1obbdRJ4wkeDO_RvdTlm4L1kBfMCQOBAqNVApwrb5W-QR0EiiMwOX29lgmHSmdIvoBA4FBzqkcqyjoTdnFy4Sg1TwEhfCi9NFojoc1oFubVur83a13DAhWeGCNtRJ9PLpRizTUPad98HPpRwCuXwcqkOMqO5FdGdt1kmq9M-gfXhwsqhEhg_itvZk-o6JXymsx4XYiwcDzft6MdnWQO88h"/>
+<p class="mt-4 text-text italic">"CIS에서 저는 학문적으로 성장했을 뿐만 아니라 평생 친구들을 만났습니다."</p>
+<p class="mt-4 font-bold text-primary">- 김민준, 12학년</p>
+</div>
+<div class="bg-card dark:bg-card-dark p-6 rounded-lg shadow-md text-center">
+<img alt="Alumni" class="w-24 h-24 rounded-full mx-auto -mt-16 border-4 border-background dark:border-background-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdKdtDtREQFTJ3fPbM5rBz-nq2HBrqieAX7vpxTVBCuXjl4x63-p2qWIvoXwjfSmPCSHcYg5WqQ-Vvbr4FfW72bfmH0D6rR08r4RX-rbtnBS7xZoitq8TsgCCkiA95NKywAkNzw4b1J-ECLDZ83BcKzB-jwd6RUpwjBxBUhAabaSrvaDBFRM8iidvAOYsJCEOl3e9q0rtUPYnCFq-snlI0xZA7Bx3QwsXGb3EE45T9Ob7a9jftIEyROMNwvEQfXP9oYmPaTtlV2b7E"/>
+<p class="mt-4 text-text italic">"교사들의 헌신적인 지원 덕분에 제 꿈을 추구할 수 있었습니다."</p>
+<p class="mt-4 font-bold text-primary">- 박서연, 2020년 졸업생</p>
+</div>
+<div class="bg-card dark:bg-card-dark p-6 rounded-lg shadow-md text-center">
+<img alt="Parent" class="w-24 h-24 rounded-full mx-auto -mt-16 border-4 border-background dark:border-background-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKWy0uYhFBh-X5S-hDwOxPzA0VY2SgJ3WFifQQI31guV1-IP9ICHC7qyyRKQ7rDqqrHMmfA-JhozZX6-hCYXnpuPl0PTQnvFW-dawhupzZqTOSjHvLYmEbZuPveIW6jYtbnup6R_oSUXhyU4kjrMAQDExV-KQyw2G6wxEQJCGBcw41RKrShJ-cpAnOjIlEkb-qwgjWw27Y8OT-cljfvMhF9BpJrub4Klu_daQmp3ftqK-YZAclye4bhqzynt9Q5PpktMik9Y5IHUye"/>
+<p class="mt-4 text-text italic">"CIS의 다양하고 포용적인 커뮤니티는 우리 아이가 글로벌 시민으로 성장하는 데 큰 도움이 되었습니다."</p>
+<p class="mt-4 font-bold text-primary">- 이지혜, 학부모</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 lg:py-24 bg-cover bg-center" style="background-image: linear-gradient(rgba(236, 239, 241, 0.9), rgba(236, 239, 241, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCI1bl1yI4DKla1saT3HCD6e6Eog2o9mh1M6dQNnOKcbcK7-i9ezdqaVV_k-WUVY_Io-H7emejRXtDo3X-B2G-5ynfUlzfPb5P0GEgNH6owQp1bBR1Y_i6x9F-DjbpAn8TH6k31NF-oFeiLAFq0RZPY0MJwyKgaIq1aLa-dVsDWQksdVD2R6_4XQtFQCEb51bL1_m2HVilxnqNZiFERza8TXQ9SWjXWLPU9cZD-hgskEypnktznPijRPfCRE41v-egvuDLC15-9hvTR');">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl lg:text-4xl font-bold text-primary">CIS에서의 삶을 경험해보세요</h2>
+<p class="mt-2 text-lg text-text-muted mb-8">학교 투어 영상을 통해 우리 캠퍼스를 둘러보세요.</p>
+<div class="relative max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+<img alt="Campus video thumbnail" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI1bl1yI4DKla1saT3HCD6e6Eog2o9mh1M6dQNnOKcbcK7-i9ezdqaVV_k-WUVY_Io-H7emejRXtDo3X-B2G-5ynfUlzfPb5P0GEgNH6owQp1bBR1Y_i6x9F-DjbpAn8TH6k31NF-oFeiLAFq0RZPY0MJwyKgaIq1aLa-dVsDWQksdVD2R6_4XQtFQCEb51bL1_m2HVilxnqNZiFERza8TXQ9SWjXWLPU9cZD-hgskEypnktznPijRPfCRE41v-egvuDLC15-9hvTR"/>
+<div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+<button class="bg-background/80 dark:bg-background-dark/80 text-primary w-20 h-20 rounded-full flex items-center justify-center hover:bg-background dark:hover:bg-background-dark transition-colors">
+<span class="material-symbols-outlined text-6xl">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary text-background dark:text-background-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+<div class="lg:col-span-1">
+<h3 class="text-lg font-bold">세부 국제학교</h3>
+<p class="mt-2 text-sm text-background/80 dark:text-background-dark/80">Pit-os, Cebu City, 6000 Cebu, Philippines</p>
+<p class="mt-1 text-sm text-background/80 dark:text-background-dark/80">연락처: +63 32 233 8117</p>
+<p class="mt-1 text-sm text-background/80 dark:text-background-dark/80">이메일: info@cis.edu.ph</p>
+</div>
+<div class="lg:col-span-1">
+<h3 class="text-lg font-bold">빠른 링크</h3>
+<ul class="mt-2 space-y-1 text-sm">
+<li><a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="#">교직원 채용</a></li>
+<li><a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="#">교직원 디렉토리</a></li>
+<li><a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="#">학교 캘린더</a></li>
+<li><a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="#">연락처</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h3 class="text-lg font-bold">언어 선택</h3>
+<ul class="mt-2 space-y-1 text-sm">
+<li><a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="about.html">English</a></li>
+<li><a class="font-bold text-secondary" href="#">한국어</a></li>
+<li><a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="aboutcebuano.html">Cebuano</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h3 class="text-lg font-bold">팔로우하기</h3>
+<div class="flex mt-2 space-x-4">
+<a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6.54a.75.75,0,0,0-.92,0l-2.09,2.09a8.23,8.23,0,0,0-6-2.58,8.21,8.21,0,0,0-8.1,7.2,8.1,8.1,0,0,0,8.32,9,.75.75,0,0,0,.74-.63,8.5,8.5,0,0,0,.08-1.22c.73-2.18,2.7-3.77,5.13-3.77a.75.75,0,0,0,0-1.5,5.19,5.19,0,0,1-4-2.3,6.67,6.67,0,0,1,5.65-9.67Z"></path></svg>
+</a>
+<a class="text-background/80 dark:text-background-dark/80 hover:text-secondary" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12,8a4,4,0,1,0,4,4A4,4,0,0,0,12,8Zm0,6.5A2.5,2.5,0,1,1,14.5,12,2.5,2.5,0,0,1,12,14.5ZM16.7,2H7.3A5.31,5.31,0,0,0,2,7.3V16.7A5.31,5.31,0,0,0,7.3,22H16.7A5.31,5.31,0,0,0,22,16.7V7.3A5.31,5.31,0,0,0,16.7,2ZM20.5,16.7a3.8,3.8,0,0,1-3.8,3.8H7.3a3.8,3.8,0,0,1-3.8-3.8V7.3A3.8,3.8,0,0,1,7.3,3.5H16.7a3.8,3.8,0,0,1,3.8,3.8Zm-3.5-9.8A1.2,1.2,0,1,1,15.8,8,1.2,1.2,0,0,1,17,6.9Z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-background/20 dark:border-background-dark/20 pt-8 text-center text-sm text-background/80 dark:text-background-dark/80">
+<p>© 2024 Cebu International School. 모든 권리 보유.</p>
+<a class="hover:text-secondary" href="#">개인정보 보호정책</a> | <a class="hover:text-secondary" href="#">이용약관</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

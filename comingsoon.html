@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coming Soon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19a1e6",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111c21",
+                        "content-light": "#111c21",
+                        "content-dark": "#f6f7f8",
+                        "subtle-light": "#e3e8ed",
+                        "subtle-dark": "#243137",
+                        "placeholder-light": "#6b7f8a",
+                        "placeholder-dark": "#8a9aa1"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .font-display {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+<div class="flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+<div class="w-full max-w-2xl mx-auto text-center">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">We're Launching Soon!</h1>
+<p class="mt-4 text-lg sm:text-xl text-content-light/80 dark:text-content-dark/80 max-w-xl mx-auto">
+                Our new website is under construction, but we're excited to share it with you. Sign up to be the first to know when we go live.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 my-10 sm:my-12">
+<div class="flex flex-col items-center p-4 rounded-lg bg-subtle-light dark:bg-subtle-dark">
+<span class="text-4xl sm:text-5xl font-bold">25</span>
+<span class="text-sm uppercase tracking-widest mt-1">Days</span>
+</div>
+<div class="flex flex-col items-center p-4 rounded-lg bg-subtle-light dark:bg-subtle-dark">
+<span class="text-4xl sm:text-5xl font-bold">10</span>
+<span class="text-sm uppercase tracking-widest mt-1">Hours</span>
+</div>
+<div class="flex flex-col items-center p-4 rounded-lg bg-subtle-light dark:bg-subtle-dark">
+<span class="text-4xl sm:text-5xl font-bold">30</span>
+<span class="text-sm uppercase tracking-widest mt-1">Minutes</span>
+</div>
+<div class="flex flex-col items-center p-4 rounded-lg bg-subtle-light dark:bg-subtle-dark">
+<span class="text-4xl sm:text-5xl font-bold">45</span>
+<span class="text-sm uppercase tracking-widest mt-1">Seconds</span>
+</div>
+</div>
+<form class="w-full max-w-md mx-auto">
+<div class="flex flex-col sm:flex-row items-center gap-4">
+<input class="form-input w-full px-4 py-3 rounded-lg border-0 bg-subtle-light dark:bg-subtle-dark placeholder-placeholder-light dark:placeholder-placeholder-dark focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-base" placeholder="Enter your email address" type="email"/>
+<button class="w-full sm:w-auto shrink-0 px-6 py-3 rounded-lg bg-primary text-white font-bold transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="submit">
+                        Notify Me
+                    </button>
+</div>
+</form>
+</div>
+</div>
+
+</body></html>

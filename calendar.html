@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cebu International School - Calendar</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#19a1e6",
+            "background-light": "#f6f7f8",
+            "background-dark": "#111c21",
+            "foreground-light": "#10191d",
+            "foreground-dark": "#f0f2f3",
+            "subtle-light": "#e3e5e7",
+            "subtle-dark": "#2a3439",
+            "muted-light": "#64748b",
+            "muted-dark": "#94a3b8",
+          },
+          fontFamily: {
+            "display": ["Public Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .font-display {
+      font-family: 'Public Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark">
+<div class="flex flex-col min-h-screen">
+<header class="border-b border-subtle-light dark:border-subtle-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-4">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<a href="index.html" class="flex items-center">
+  <img src="logo.png" alt="Cebu International School logo" class="h-10 w-auto rounded-md object-contain" loading="lazy"/>
+</a>
+</svg>
+<h1 class="text-xl font-bold">Cebu International School</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="academic.html">Academics</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="admission.html">Admissions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="studentservice.html">Student Life</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About Us</a>
+<a class="text-sm font-bold text-primary" href="calendar.html">Calendar</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-subtle-light dark:hover:bg-subtle-dark transition-colors">
+<a href="index.html" class="flex items-center">
+  <img src="logo.png" alt="Cebu International School logo" class="h-10 w-auto rounded-md object-contain" loading="lazy"/>
+</a>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("Anthon Portriat.jpg");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+<div class="max-w-7xl mx-auto">
+<div class="mb-8">
+<h2 class="text-4xl font-bold tracking-tight">School Calendar</h2>
+<p class="mt-2 text-lg text-muted-light dark:text-muted-dark">Stay updated with all the important dates and events at Cebu International School.</p>
+</div>
+<div class="border-b border-subtle-light dark:border-subtle-dark mb-8">
+<nav class="flex space-x-8 -mb-px">
+<a class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-primary border-primary" href="#">Monthly View</a>
+<a class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-muted-light dark:text-muted-dark border-transparent hover:text-foreground-light dark:hover:text-foreground-dark hover:border-subtle-light dark:hover:border-subtle-dark" href="#">Weekly View</a>
+</nav>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg">
+<div class="flex items-center justify-between mb-4">
+<button class="p-2 rounded-full hover:bg-subtle-light dark:hover:bg-subtle-dark">
+<svg fill="currentColor" height="18px" viewBox="0 0 256 256" width="18px" xmlns="http://www.w3.org/2000/svg">
+<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+</svg>
+</button>
+<h3 class="text-lg font-bold">August 2024</h3>
+<div></div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center text-sm">
+<div class="font-bold text-muted-light dark:text-muted-dark">S</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">M</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">T</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">W</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">T</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">F</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">S</div>
+<div class="col-start-5"></div>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto">5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+<div>31</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg">
+<div class="flex items-center justify-between mb-4">
+<div></div>
+<h3 class="text-lg font-bold">September 2024</h3>
+<button class="p-2 rounded-full hover:bg-subtle-light dark:hover:bg-subtle-dark">
+<svg fill="currentColor" height="18px" viewBox="0 0 256 256" width="18px" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center text-sm">
+<div class="font-bold text-muted-light dark:text-muted-dark">S</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">M</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">T</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">W</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">T</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">F</div>
+<div class="font-bold text-muted-light dark:text-muted-dark">S</div>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-6">Upcoming Events</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-subtle-dark/50 hover:bg-subtle-light dark:hover:bg-subtle-dark transition-colors">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 text-primary shrink-0 size-12">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-semibold">Back to School Orientation</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">August 15, 2024</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-subtle-dark/50 hover:bg-subtle-light dark:hover:bg-subtle-dark transition-colors">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 text-primary shrink-0 size-12">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-semibold">Parent-Teacher Conference</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">August 22, 2024</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-subtle-dark/50 hover:bg-subtle-light dark:hover:bg-subtle-dark transition-colors">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 text-primary shrink-0 size-12">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-semibold">School Sports Day</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">September 5, 2024</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-subtle-dark/50 hover:bg-subtle-light dark:hover:bg-subtle-dark transition-colors">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 text-primary shrink-0 size-12">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-semibold">Arts Festival</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">September 18, 2024</p>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold bg-primary text-white hover:bg-primary/90 transition-colors">
+              Add to My Calendar
+            </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
